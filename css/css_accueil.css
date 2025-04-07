@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0a4da2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #0a4da2;
+    border-radius: 5px;
+}
+
+#la_une {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#la_une h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0a4da2;
+    text-align: center;
+}
+
+.bas {
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+}
+
+#art1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+article h3 {
+    font-size: 24px;
+    color: #0a4da2;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+#Endrick-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#Endrick img {
+    max-width: 300px;
+    margin-right: 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.Endrick p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #0a4da2;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #la_une {
+        padding: 15px;
+    }
+
+    article h3 {
+        font-size: 20px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+}

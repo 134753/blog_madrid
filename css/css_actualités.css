@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0a4da2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #0a4da2;
+    border-radius: 5px;
+}
+
+/* Style des actualités */
+#Actualités {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Actualités h2 {
+    font-size: 28px;
+    color: #0a4da2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+article {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 22px;
+    color: #0a4da2;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Style spécifique pour les articles */
+#Kylian, #formule {
+    background-color: #ffffff;
+}
+
+.naufrage {
+    background-color: #f7eaea;
+}
+
+/* Styles pour le conteneur des articles */
+#Actualités {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Première image à gauche */
+#Kylian img {
+    float: left; /* Image flottante à gauche */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    max-width: 350px; /* Ajustement de la taille si nécessaire */
+}
+
+/* Deuxième image à droite */
+.naufrage img {
+    float: right; /* Image flottante à droite */
+    margin-left: 20px; /* Espace entre l'image et le texte */
+    max-width: 200px;
+}
+
+/* Troisième image à gauche */
+#formule img {
+    float: left; /* Image flottante à gauche */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    max-width: 250px;
+}
+
+/* Styles pour les articles */
+article {
+    overflow: hidden; /* Pour s'assurer que le contenu s'enroule autour des images correctement */
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* Style du footer */
+footer {
+    background-color: #0a4da2;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Style responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    #Actualités {
+        padding: 15px;
+    }
+
+    article h3 {
+        font-size: 20px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+}

@@ -84,8 +84,12 @@ article p {
     line-height: 1.8;
 }
 
+#Belli {
+    display: flex;
+}
+
 /* Style spécifique pour les articles */
-#Kylian, #formule {
+#Belli, #formule {
     background-color: #ffffff;
 }
 
@@ -100,10 +104,10 @@ article p {
 }
 
 /* Première image à gauche */
-#Kylian img {
+#Belli img {
     float: left; /* Image flottante à gauche */
     margin-right: 20px; /* Espace entre l'image et le texte */
-    max-width: 350px; /* Ajustement de la taille si nécessaire */
+    height: 100px; /* Ajustement de la taille si nécessaire */
 }
 
 /* Deuxième image à droite */
@@ -147,6 +151,7 @@ footer p {
     font-size: 14px;
 }
 
+
 /* Style responsive */
 @media (max-width: 768px) {
     nav ul li {
@@ -173,5 +178,17 @@ footer p {
 
     article p {
         font-size: 14px;
+    }
+    #art1, #art2, #Endrick-content {
+        flex-direction: column;
+    }
+
+    #Rodrygo, #Endrick {
+        max-width: 100%;
+        display: flex;
+    }
+
+    .rumeur, .Endrick {
+        padding: 15px;
     }
 }

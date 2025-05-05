@@ -47,103 +47,15 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Style des actualités */
-#Actualités {
-    margin: 40px auto;
-    max-width: 900px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#Actualités h2 {
-    font-size: 28px;
-    color: #0a4da2;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-article {
-    margin-bottom: 30px;
-    padding: 15px;
-    background-color: #fafafa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-article h3 {
-    font-size: 22px;
-    color: #0a4da2;
-    margin-bottom: 10px;
-}
-
-article p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.8;
-}
-
-#Belli {
-    display: flex;
-}
-
-/* Style spécifique pour les articles */
-#Belli, #formule {
-    background-color: #ffffff;
-}
-
-.naufrage {
-    background-color: #f7eaea;
-}
-
-/* Styles pour le conteneur des articles */
-#Actualités {
-    width: 100%;
-    margin: 0 auto;
-}
-
-/* Première image à gauche */
-#Belli img {
-    float: left; /* Image flottante à gauche */
-    margin-right: 20px; /* Espace entre l'image et le texte */
-    height: 100px; /* Ajustement de la taille si nécessaire */
-}
-
-/* Deuxième image à droite */
-.naufrage img {
-    float: right; /* Image flottante à droite */
-    margin-left: 20px; /* Espace entre l'image et le texte */
-    max-width: 200px;
-}
-
-/* Troisième image à gauche */
-#formule img {
-    float: left; /* Image flottante à gauche */
-    margin-right: 20px; /* Espace entre l'image et le texte */
-    max-width: 250px;
-}
-
-/* Styles pour les articles */
-article {
-    overflow: hidden; /* Pour s'assurer que le contenu s'enroule autour des images correctement */
-}
-
-article h3 {
-    margin-top: 0;
-}
-
-article p {
-    text-align: justify;
-}
-
-/* Style du footer */
 footer {
     background-color: #0a4da2;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
@@ -151,24 +63,22 @@ footer p {
     font-size: 14px;
 }
 
-
-/* Style responsive */
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    body {
-        padding: 10px;
-    }
-
     header h1 {
         font-size: 28px;
     }
 
-    #Actualités {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #la_une {
         padding: 15px;
     }
 
@@ -178,17 +88,5 @@ footer p {
 
     article p {
         font-size: 14px;
-    }
-    #art1, #art2, #Endrick-content {
-        flex-direction: column;
-    }
-
-    #Rodrygo, #Endrick {
-        max-width: 100%;
-        display: flex;
-    }
-
-    .rumeur, .Endrick {
-        padding: 15px;
     }
 }

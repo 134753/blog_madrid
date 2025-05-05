@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités</title>
     <link rel="stylesheet" href="css/css_actualités.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Blog Madrid</h1>
-        <nav>
+    <header class="md:text-[30px]">
+        <h1 class="text-[30px]">Blog Madrid</h1>
+        <nav class="">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="Actualités.html">Actualités</a></li>
@@ -18,40 +19,57 @@
             </ul>
         </nav>
     </header>
-    <div id="Actualités">
-        <h2>Dernières actualités</h2>
-        <article style="display: flex;" id="Belli">
-            <img style="margin-top: 30px; height: 450px; width:400px; margin-right: 10px;" src="../img/Belli.jpg" alt="Bellingham">
-            <div>
-                <h3>Bellingham, le futur du Real Madrid : Le milieu le plus complet du monde</h3>
-                <p style="font-size: 15px;">Depuis plusieurs mois, une certitude s’installe dans les esprits des supporters madrilènes : Jude Bellingham, surnommé "Belli", n’est pas simplement une recrue brillante, c’est l’architecte du futur du Real Madrid. À seulement 21 ans, l’international anglais s’est imposé comme le milieu de terrain le plus complet du monde, redéfinissant le rôle de "numéro 8" dans le football moderne.<br>
-                    Ce qui distingue Bellingham de ses contemporains, c’est son incroyable polyvalence. Il peut jouer en 6, 8 ou 10 avec la même aisance. Défensivement, il récupère, presse, et oriente. Offensivement, il dicte le tempo, casse les lignes, et surtout, il marque — souvent et dans les moments décisifs. Peu de milieux de terrain dans l’histoire récente ont affiché une telle palette à son âge. Son jeu sans ballon, son impact physique et sa maturité tactique rappellent les plus grands, tout en apportant une touche de modernité et de verticalité dont le Real avait besoin.</p>
-            </div>
+    <div class="mt-6 text-center">
+        <h2 class="text-[32px] md:text-[38px] text-[#0a4da2]">Dernières actualités</h2>
+        <article class="md:flex">
+           
+                <img class="h-[320px] w-[260px] md:h-[420px] md:w-[360px] shadow-lg shadow-black rounded-lg mt-6 mb-4 ml-[15%] md:ml-[10%] md:rounded-xs"  src="img/Belli.jpg" alt="Bellingham">
+
+                <div>
+                    <h3 class="mt-8 text-[22px] md:text-[28px] text-[#0a4da2] ">Bellingham, le futur du Real Madrid : Le milieu le plus complet du monde</h3>
+                    <p class="p-6 pb-2 md:text-[20px] md:ml-4 md:mr-[10%]">Depuis plusieurs mois, une certitude s’installe dans les esprits des supporters madrilènes : Jude Bellingham, surnommé "Belli", n’est pas simplement une recrue brillante, c’est l’architecte du futur du Real Madrid. À seulement 21 ans, l’international anglais s’est imposé comme le milieu de terrain le plus complet du monde, redéfinissant le rôle de "numéro 8" dans le football moderne.<br>
+                        Ce qui distingue Bellingham de ses contemporains, c’est son incroyable polyvalence. Il peut jouer en 6, 8 ou 10 avec la même aisance. Défensivement, il récupère, presse, et oriente. Offensivement, il dicte le tempo, casse les lignes, et surtout, il marque souvent et dans les moments décisifs. Peu de milieux de terrain dans l’histoire récente ont affiché une telle palette à son âge. Son jeu sans ballon, son impact physique et sa maturité tactique rappellent les plus grands, tout en apportant une touche de modernité et de verticalité dont le Real avait besoin.</p>
+                </div>
+                
             
         </article>
-        <articles class="naufrage">
-            <img src="img/Pinterest.jpeg" alt="Madrid">
-            <h3 style="color: #0a4da2; font-size: 22px;">Une performance en demi-teinte</h3>
-            <p style="color: #555;">Dès les premières minutes, on a senti un Real Madrid timide, en manque de rythme. Les absences notables, les jambes peut-être lourdes après une série de matchs intenses, ou simplement une mauvaise lecture de la rencontre ? Quelle qu’en soit la raison, le Real n’a jamais vraiment imposé sa loi. Malgré une possession de balle maîtrisée par moments, les Merengue ont peiné à déséquilibrer un bloc adverse parfaitement en place.
+        <articles class="naufrage md:flex">
+            <img class= "h-[320px] w-[260px] shadow-lg shadow-black rounded-lg mt-6 mb-4 ml-[15%] md:h-[550px] md:order-2 md:ml-[4%] md:mr-[10%] md:w-[320px]" src="img/Pinterest.jpeg" alt="Madrid">
 
-                Les individualités habituellement décisives Brahim, Vinícius, ou même Rodrigo n'ont pas su hausser leur niveau. Et dans les moments clés, le réalisme, cette marque de fabrique madrilène, a cruellement manqué</p>
-                <h4 style="color: #0a4da2; font-size: 20px;">Une défense en difficulté, un milieu étouffé</h4>
-                <p style="color: #555;">Défensivement, le Real a été pris à revers sur des phases rapides. L’absence d’agressivité dans les duels et un manque de coordination sur certaines transitions ont laissé des espaces fatals. Les but encaissé symptomatique d’un relâchement collectif a mis en lumière une fragilité de plus en plus récurentes cette saison chez les Blancos.
+            <div class="md:ml-[10%] md:mt-16">
+                <div>
+                    <h3 class="text-[22px] md:text-[28px] " style="color: #0a4da2;">Une performance en demi-teinte</h3>
+                    <p class="p-6 pb-3 md:text-[20px]" style="color: #555;">Dès les premières minutes, on a senti un Real Madrid timide, en manque de rythme. Les absences notables, les jambes peut-être lourdes après une série de matchs intenses, ou simplement une mauvaise lecture de la rencontre ? Quelle qu’en soit la raison, le Real n’a jamais vraiment imposé sa loi. Malgré une possession de balle maîtrisée par moments, les Merengue ont peiné à déséquilibrer un bloc adverse parfaitement en place.
+
+                    Les individualités habituellement décisives Brahim, Vinícius, ou même Rodrigo n'ont pas su hausser leur niveau. Et dans les moments clés, le réalisme, cette marque de fabrique madrilène, a cruellement manqué.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-[20px] md:text-[26px]" style="color: #0a4da2;">Une défense en difficulté & un milieu étouffé</h4>
+                    <p class="p-6 pb-2 p-6 pb-3 md:text-[20px]" style="color: #555;">Défensivement, le Real a été pris à revers sur des phases rapides. L’absence d’agressivité dans les duels et un manque de coordination sur certaines transitions ont laissé des espaces fatals. Les but encaissé symptomatique d’un relâchement collectif a mis en lumière une fragilité de plus en plus récurentes cette saison chez les Blancos.
 
                     Au milieu, l’intensité a fait défaut. Face à une équipe qui jouait chaque ballon comme une finale de sa vie, le Real a semblé parfois jouer avec le frein à main.</p>
+                </div>
+            </div>
+ 
+                
         </articles>
-        <article style="margin-top: 30px;" id="formule">
-            <img src="img/Xabi-Alonso-annonce-au-Real-Madrid.jpg" alt="Madrid">
-            <h3>Xabi Alonso, le successeur naturel : pour reconstruire l’identité de jeu du Real Madrid</h3>
-            <p>Alors que Carlo Ancelotti semble approcher de la fin de son deuxième mandat sur le banc du Real Madrid, une question majeure anime les coulisses de la Casa Blanca : qui sera capable d’incarner l’héritage tout en insufflant une nouvelle ère ? Un nom s’impose de plus en plus comme une évidence, celui de Xabi Alonso. Ancien joueur emblématique du club, entraîneur en pleine ascension, et figure respectée dans toute l’Europe, il apparaît aujourd’hui comme le candidat parfait pour reconstruire l’identité de jeu du Real Madrid.</p>
+        <article  style="margin-top: 30px;" class=" md:pl-[10%] md:pr-[10%] md:flex md:mt-6 md:flex-wrap">
+            <img class="w-full md:h-[380px] md:w-[320px]" src="img/Xabi-Alonso-annonce-au-Real-Madrid.jpg" alt="Madrid">
+
             <div>
-                <h4 style="margin-top: 10px; font-size: 20px; color: #0a4da2;">Un ADN madrilène dans le sang</h4>
-                <p style="color: #555;">Formé à la Real Sociedad, épanoui à Liverpool, Xabi Alonso a laissé une empreinte indélébile au Real Madrid entre 2009 et 2014. Stratège du milieu de terrain sous Mourinho puis Ancelotti, il a incarné l’élégance et l’intelligence de jeu à la madrilène : sobriété, rigueur, précision, et un sens aigu de la lecture du jeu. Son passage au club a non seulement marqué une époque, mais l’a également imprégné d’une culture de l’excellence que peu de techniciens peuvent revendiquer. Il connaît la maison. Il sait ce qu’elle exige.</p>
+                <h3 class="text-[22px] md:text-[28px]" style="color: #0a4da2; margin-top:15px;">Xabi Alonso, le successeur naturel : pour reconstruire l’identité de jeu du Real Madrid</h3>
+                <p class="p-2 md:text-[20px]" >Alors que Carlo Ancelotti semble approcher de la fin de son deuxième mandat sur le banc du Real Madrid, une question majeure anime les coulisses de la Casa Blanca : qui sera capable d’incarner l’héritage tout en insufflant une nouvelle ère ? Un nom s’impose de plus en plus comme une évidence, celui de Xabi Alonso. Ancien joueur emblématique du club, entraîneur en pleine ascension, et figure respectée dans toute l’Europe, il apparaît aujourd’hui comme le candidat parfait pour reconstruire l’identité de jeu du Real Madrid.</p>
+                <div>
+                    <h4 class="text-[22px] md:text-[24px]" style="margin-top: 10px; color: #0a4da2;">Un ADN madrilène dans le sang</h4>
+                    <p class="p-2 md:text-[20px]" style="color: #555;">Formé à la Real Sociedad, épanoui à Liverpool, Xabi Alonso a laissé une empreinte indélébile au Real Madrid entre 2009 et 2014. Stratège du milieu de terrain sous Mourinho puis Ancelotti, il a incarné l’élégance et l’intelligence de jeu à la madrilène : sobriété, rigueur, précision, et un sens aigu de la lecture du jeu. Son passage au club a non seulement marqué une époque, mais l’a également imprégné d’une culture de l’excellence que peu de techniciens peuvent revendiquer. Il connaît la maison. Il sait ce qu’elle exige.</p>
+                </div>
+                <div>
+                    <h4 class="text-[22px] md:text-[28px]" style="margin-top: 10px; color: #0a4da2;">Un style clair, une philosophie affirmée</h4>
+                    <p class="p-2 md:text-[20px]" style="color: #555;">Ce qui impressionne dans le travail de Xabi Alonso avec le Bayer Leverkusen, c’est la clarté et la cohérence de son projet de jeu. En l’espace de deux saisons, il a transformé une équipe moyenne de Bundesliga en machine collective, structurée, moderne et redoutablement efficace. Pressing intelligent, transitions rapides, construction posée : tout y est. Son approche mêle discipline tactique, jeu de position, et verticalité maîtrisée, exactement ce dont le Real a besoin pour retrouver une identité forte après des années de pragmatisme.</p>
+                </div>
             </div>
-            <div>
-                <h4 style="margin-top: 10px; font-size: 20px; color: #0a4da2;">Un style clair, une philosophie affirmée</h4>
-                <p style="color: #555;">Ce qui impressionne dans le travail de Xabi Alonso avec le Bayer Leverkusen, c’est la clarté et la cohérence de son projet de jeu. En l’espace de deux saisons, il a transformé une équipe moyenne de Bundesliga en machine collective, structurée, moderne et redoutablement efficace. Pressing intelligent, transitions rapides, construction posée : tout y est. Son approche mêle discipline tactique, jeu de position, et verticalité maîtrisée, exactement ce dont le Real a besoin pour retrouver une identité forte après des années de pragmatisme</p>
-            </div>
+
         </article>
     </div>
     <footer>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Madrid</title>
     <link rel="stylesheet" href="css/css_accueil.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
@@ -18,30 +19,29 @@
             </ul>
         </nav>
     </header>
-    <div id="la_une">
-        <h2>A la une</h2>
-        <div id="art1">
-            <div id="Rodrygo">
-                <img src="../img/Rodrygo.jpeg" alt="Rodrygo" class="bas">
+    <section class="mt-6 text-center">
+        <h2 class="text-[32px] text-[#0a4da2]">A la une</h2>
+        <div class="mt-6 md:flex">
+            <div class="ml-[15%] md:ml-[10%] md:w-[80%]">
+                <img src="img/Rodrygo.jpeg" alt="Rodrygo" class="h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:h-[380px] md:w-full md:rounded-none">
             </div>
-            <article class="rumeur">
-                <h3>Rumeur</h3>
-                <p>Une rumeur circule ces derniers jours concernant un possible transfert de Rodrygo, le
-                brésilien du Real Madrid, vers Manchester City. Selon des sources anonymes proches du dossier, les Citizens auraient déjà entamé des discussions avec l'ailier pour l'attirer dès cet été.<br>Des insiders suggèrent que Pep Guardiola serait très intéressé par le profil de l'ailier, le considérant comme un atout précieux pour renforcer son attaque. De plus, des déclarations récentes du joueur, évoquant son admiration pour la Premier League, alimentent les spéculations sur un éventuel départ.<br>Bien que le Real Madrid ne semble pas disposé à laisser partir une de ses jeunes stars facilement, des sources affirment que le club pourrait être tenté par une offre séduisante, surtout si elle incluait un échange avec un joueur de l'effectif de City. À suivre de près ! <br>© Source marca.</p>
-            </article>
+            <div class="md:flex flex-col md:items-start md:mt-4">
+                <h3 class="mt-8 md:mt-2 text-[22px] text-[#0a4da2] ml-8">Rumeur! Rodrygo à Man City?</h3>
+                <p class="p-4 pb-2 md:pr-[15%] md:text-[18px]">Une rumeur circule ces derniers jours concernant un possible transfert de Rodrygo, le
+                brésilien du Real Madrid, vers Manchester City. Selon des sources anonymes proches du dossier, les Citizens auraient déjà entamé des discussions avec l'ailier pour l'attirer dès cet été. Des insiders suggèrent que Pep Guardiola serait très intéressé par le profil de l'ailier, le considérant comme un atout précieux pour renforcer son attaque. De plus, des déclarations récentes du joueur, évoquant son admiration pour la Premier League, alimentent les spéculations sur un éventuel départ.<br>Bien que le Real Madrid ne semble pas disposé à laisser partir une de ses jeunes stars facilement, des sources affirment que le club pourrait être tenté par une offre séduisante, surtout si elle incluait un échange avec un joueur de l'effectif de City. À suivre de près !</p> <span class="absolute left-[5%]  text-[12px] mb-6 md:relative md:mt-2">© Source marca.</span>
+            </div>
         </div>
-        <div id="art2">
-            <div id="Endrick-content">
-                <article class="Endrick">
-                    <h3>Endrick la nouvelle étoile</h3>
-                    <p>À seulement 17 ans, Endrick a déjà fait parler de lui avec des performances impressionnantes à lors de sa campagne en coupe du roi. Son transfert au Real Madrid représente une vision à long terme du club, cherchant à construire une équipe compétitive pour les années à venir. Sa vitesse, sa technique et son flair offensif en font un joueur à suivre de près.<br>L'intégration d'Endrick à Madrid sera cruciale pour son développement. Sous l'aile de joueurs expérimentés comme Mbappé ou Vinicius, il aura l'opportunité d'apprendre et de s'épanouir dans un environnement compétitif. Le club a une longue tradition de développement de jeunes talents, et Endrick pourrait devenir la prochaine grande star de ce Réal Madrid. <br>© Nyamsi Lévy</p>
-                </article>
-                <div id="Endrick">
-                    <img src="../img/Endrick.jpeg" alt="Endrick">
-                </div>    
+        <div class="mt-8 md:flex">
+            <img src="img/Endrick.jpeg" alt="Endrick" class="mt-16 mb-4 ml-[15%] h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:order-2 md:rounded-none md:h-[380px] md:w-full md:mr-[10%]"> 
+            <div class="md:mt-8 md:ml-6">
+                <h3 class="mt-8 mb-4 text-[22px] text-[#0a4da2]">Endrick la nouvelle étoile</h3>
+                                    
+                            <p class="m-4 mb-2 md:text-[18px]">À seulement 17 ans, Endrick a déjà fait parler de lui avec des performances impressionnantes à lors de sa campagne en coupe du roi. Son transfert au Real Madrid représente une vision à long terme du club, cherchant à construire une équipe compétitive pour les années à venir. Sa vitesse, sa technique et son flair offensif en font un joueur à suivre de près.<br>L'intégration d'Endrick à Madrid sera cruciale pour son développement. Sous l'aile de joueurs expérimentés comme Mbappé ou Vinicius, il aura l'opportunité d'apprendre et de s'épanouir dans un environnement compétitif. Le club a une longue tradition de développement de jeunes talents, et Endrick pourrait devenir la prochaine grande star de ce Réal Madrid. </p> <span class="absolute left-[5%]  text-[12px] mb-6 md:mt-4">© Nyamsi Lévy</span>
             </div>
+            
+                  
         </div>    
-    </div>
+    </section>
     <footer>
         <p>© 2024 News Madrid</p>
     </footer>

@@ -5,19 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier</title>
     <link rel="stylesheet" href="css/css_calendrier.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Blog Madrid</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Calendrier.html">Calendrier</a></li>
-                <li><a href="Equipe.html">Equipe</a></li>
-            </ul>
+    <header class="p-4 md:text-[30px]">
+        
+        <div class="flex justify-between items-center md:hidden">
+          <h1 class="text-[32px]">Blog Madrid</h1>
+          <button id="burger" class="text-3xl" aria-label="Menu">
+            &#9776;
+          </button>
+        </div>
+      
+        <div class="hidden md:block text-center">
+          <h1 class="text-[54px]">Blog Madrid</h1>
+        </div>
+      
+        <nav id="navMenu" class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:justify-center">
+          <ul class="flex flex-col gap-2 md:flex-row">
+            <li><a class="text-[28px]" href="index.html">Accueil</a></li>
+            <li><a class="text-[28px]" href="Actualités.html">Actualités</a></li>
+            <li><a class="text-[28px]" href="Calendrier.html">Calendrier</a></li>
+            <li><a class="text-[28px]" href="Equipe.html">Equipe</a></li>
+          </ul>
         </nav>
+      
+        <!-- Script burger -->
+        <script>
+          const burger = document.getElementById("burger");
+          const navMenu = document.getElementById("navMenu");
+      
+          burger.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+          });
+        </script>
     </header>
+      
+      
+      
     <div class="Calendrier">
         <h2>Calendrier du Real Madrid</h2>
 
@@ -32,28 +57,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>08/04/2025</td>
-                        <td>Arsenal 3-0 Real Madrid</td>
+                        <td>26/04/2025</td>
+                        <td>Barcelone 3-2 Real Madrid</td>
                     </tr>
                     <tr>
-                        <td>13/04/2025</td>
-                        <td>Deportivo Alaves 0-1 Real Madrid</td>
-                    </tr>
-                    <tr>
-                        <td>16/04/2025</td>
-                        <td>Real Madrid 1-2 Arsenal</td>
-                    </tr>
-                    <tr>
-                        <td>20/04/2025</td>
-                        <td>Real Madrid 1-0 Athlético Bilbao</td>
-                    </tr>
-                    <tr>
-                        <td>23/04/2025</td>
+                        <td>04/05/2025</td>
                         <td>Getafe 0-1 Real Madrid</td>
                     </tr>
                     <tr>
-                        <td>26/04/2025</td>
-                        <td>Barcelone 3-1 Real Madrid</td>
+                        <td>11/05/2025</td>
+                        <td>Barcelone 4-3 Real Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>14/05/2025</td>
+                        <td>Real Madrdid 2-1 Majorque</td>
+                    </tr>
+                    <tr>
+                        <td>18/05/2025</td>
+                        <td>Séville 0-2 Real Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>24/05/2025</td>
+                        <td>Real Madrid 2-0 Real Sociedad</td>
                     </tr>
                 </tbody>
             </table>
@@ -71,35 +96,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>04/05/2025</td>
-                        <td>Celta Vigo</td>
-                        <td>La Liga</td>
-                    </tr>
-                    <tr>
-                        <td>11/05/2025</td>
-                        <td>Barcelone</td>
-                        <td>La Liga</td>
-                    </tr>
-                    <tr>
-                        <td>14/05/2025</td>
-                        <td>Majorque</td>
-                        <td>La Liga</td>
-                    </tr>
-                    <tr>
-                        <td>18/05/2025</td>
-                        <td>Sévile</td>
-                        <td>La Liga</td>
-                    </tr>
-                    <tr>
-                        <td>25/05/2025</td>
-                        <td>Real Sociedad</td>
-                        <td>La Liga</td>
-                    </tr>
-                    <tr>
                         <td>18/06/2025</td>
                         <td>Al-Hilal</td>
                         <td>Coupe du monde des Clubs</td>
                     </tr>
+                    <tr>
+                        <td>22/06/2025</td>
+                        <td>Pachuca</td>
+                        <td>Coupe du monde des Clubs</td>
+                    </tr>
+                    <tr>
+                        <td>27/06/2025</td>
+                        <td>RB Salzburg</td>
+                        <td>Coupe du monde des Clubs</td>
+                    </tr>
+                    
                 </tbody>
             </table>
         </section>

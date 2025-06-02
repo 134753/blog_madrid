@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe</title>
     <link rel="stylesheet" href="css/css_equipe.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Blog Madrid</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Calendrier.html">Calendrier</a></li>
-                <li><a href="Equipe.html">Equipe</a></li>
-            </ul>
+    <header class="p-4 md:text-[30px]">
+        
+        <div class="flex justify-between items-center md:hidden">
+          <h1 class="text-[32px]">Blog Madrid</h1>
+          <button id="burger" class="text-3xl" aria-label="Menu">
+            &#9776;
+          </button>
+        </div>
+      
+        <div class="hidden md:block text-center">
+          <h1 class="text-[54px]">Blog Madrid</h1>
+        </div>
+      
+        <nav id="navMenu" class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:justify-center">
+          <ul class="flex flex-col gap-2 md:flex-row">
+            <li><a class="text-[28px]" href="index.html">Accueil</a></li>
+            <li><a class="text-[28px]" href="Actualités.html">Actualités</a></li>
+            <li><a class="text-[28px]" href="Calendrier.html">Calendrier</a></li>
+            <li><a class="text-[28px]" href="Equipe.html">Equipe</a></li>
+          </ul>
         </nav>
+      
+        <!-- Script burger -->
+        <script>
+          const burger = document.getElementById("burger");
+          const navMenu = document.getElementById("navMenu");
+      
+          burger.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+          });
+        </script>
     </header>
     <div class="container">
-        <h2>Effectif du Real Madrid 2024 - 2025</h2>
+        <h2 class="p-6 md:text-[28px]">Effectif du Real Madrid 2024 - 2025</h2>
 
         <div class="equipe">
             <div class="player-card">

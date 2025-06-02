@@ -4,39 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Madrid</title>
-    <link rel="stylesheet" href="css/css_accueil.css">
+    <link rel="stylesheet" href="css/css_equipe.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Blog Madrid</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Calendrier.html">Calendrier</a></li>
-                <li><a href="Equipe.html">Equipe</a></li>
-            </ul>
+    <header class="p-4 md:text-[30px]">
+        
+        <div class="flex justify-between items-center md:hidden">
+          <h1 class="text-[32px]">Blog Madrid</h1>
+          <button id="burger" class="text-3xl" aria-label="Menu">
+            &#9776;
+          </button>
+        </div>
+      
+        <div class="hidden md:block text-center">
+          <h1 class="text-[54px]">Blog Madrid</h1>
+        </div>
+      
+        <nav id="navMenu" class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:justify-center">
+          <ul class="flex flex-col gap-2 md:flex-row">
+            <li><a class="text-[28px]" href="index.html">Accueil</a></li>
+            <li><a class="text-[28px]" href="Actualités.html">Actualités</a></li>
+            <li><a class="text-[28px]" href="Calendrier.html">Calendrier</a></li>
+            <li><a class="text-[28px]" href="Equipe.html">Equipe</a></li>
+          </ul>
         </nav>
+      
+        <!-- Script burger -->
+        <script>
+          const burger = document.getElementById("burger");
+          const navMenu = document.getElementById("navMenu");
+      
+          burger.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+          });
+        </script>
     </header>
-    <section class="mt-6 text-center">
+    <section class="mt-6 text-center md:rounded-lg md:shadow-lg md:shadow-black md:ml-[5%] md:mr-[5%] md:p-6">
         <h2 class="text-[32px] text-[#0a4da2]">A la une</h2>
-        <div class="mt-6 md:flex">
-            <div class="ml-[15%] md:ml-[10%] md:w-[80%]">
-                <img src="img/Rodrygo.jpeg" alt="Rodrygo" class="h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:h-[380px] md:w-full md:rounded-none">
+        <div class="mt-6 md:">
+            <div class="md:ml-[5%] md:flex">
+                <img src="img/Rodrygo.jpeg" alt="Rodrygo" class="ml-[15%] md:ml-0 h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:h-[450px] md:w-[410px] md:rounded-none">
+                <div class="md:ml-6 md:mt-8 ml-[10%] mr-[10%] md:ml-0 md:mr-0">
+                    <h3 class="mt-4 md:mt-2 text-[28px] md:text-[32px] text-[#0a4da2] text-left md:ml-8 md:mr-0">Rodrygo choisit de rester au Real Madrid</h3>
+                    <p class="md:p-4 md:pb-2 p-2 mr-2 md:pr-[15%] md:text-[24px] text-left">Après plusieurs semaines de spéculations, Rodrygo Goes a confirmé sa volonté de rester au Real Madrid. Malgré une fin de saison difficile et l'intérêt de clubs anglais tels qu'Arsenal et Chelsea, le Brésilien a informé la direction madrilène de son souhait de continuer l'aventure avec les Merengues.</p>
+                    <h5 class="mt-4 md:mt-2 text-[22px] md:text-[28px] text-[#0a4da2] text-left md:ml-8">Une saison en demi-teinte</h5>
+                    <p class="md:p-4 md:pb-2 p-2 mr-2 md:pr-[15%] md:text-[24px] text-left">La saison 2024-2025 n'a pas été la plus prolifique pour Rodrygo. Avec seulement 14 buts inscrits, dont le dernier en février, et une absence prolongée après la finale de la Coupe du Roi, son rendement a suscité des interrogations. Des blessures et une baisse de forme ont contribué à cette période creuse, mettant en doute sa place dans l'effectif.</p>
+                </div>
+                
             </div>
-            <div class="md:flex flex-col md:items-start md:mt-4">
-                <h3 class="mt-8 md:mt-2 text-[22px] text-[#0a4da2] ml-8">Rumeur! Rodrygo à Man City?</h3>
-                <p class="p-4 pb-2 md:pr-[15%] md:text-[18px]">Une rumeur circule ces derniers jours concernant un possible transfert de Rodrygo, le
-                brésilien du Real Madrid, vers Manchester City. Selon des sources anonymes proches du dossier, les Citizens auraient déjà entamé des discussions avec l'ailier pour l'attirer dès cet été. Des insiders suggèrent que Pep Guardiola serait très intéressé par le profil de l'ailier, le considérant comme un atout précieux pour renforcer son attaque. De plus, des déclarations récentes du joueur, évoquant son admiration pour la Premier League, alimentent les spéculations sur un éventuel départ.<br>Bien que le Real Madrid ne semble pas disposé à laisser partir une de ses jeunes stars facilement, des sources affirment que le club pourrait être tenté par une offre séduisante, surtout si elle incluait un échange avec un joueur de l'effectif de City. À suivre de près !</p> <span class="absolute left-[5%]  text-[12px] mb-6 md:relative md:mt-2">© Source marca.</span>
+            <div class="ml-[10%] mr-[10%] md:ml-[4%] md:flex flex-col md:items-start md:mt-4">
+                
+                <h5 class="mt-4 md:mt-2 md:text-[28px] text-[18px] text-[#0a4da2] md:ml-8 text-left">Un nouveau départ avec Xabi Alonso</h5>
+                <p class="p-2 md:p-4 md:pb-2 md:pr-[15%] md:text-[24px] text-left">L'arrivée de Xabi Alonso à la tête de l'équipe offre à Rodrygo une opportunité de se relancer. Le nouvel entraîneur a exprimé son admiration pour le joueur, le qualifiant de "spectaculaire" et affirmant qu'il comptait sur lui pour la saison à venir. Cependant, avec un système tactique potentiellement différent, Rodrygo devra s'adapter et prouver sa valeur pour s'assurer une place de titulaire.</p>
+                <h5 class="mt-4 md:mt-2 md:text-[28px] text-[18px] text-[#0a4da2] md:ml-8 text-center">Un objectif immédiat</h5>
+                <p class="p-2 md:p-4 md:pb-2 md:pr-[15%] md:text-[24px] text-left">Le premier test pour Rodrygo sera le Mondial des clubs, prévu en juin. Ce tournoi représente une occasion idéale pour lui de démontrer son engagement et sa capacité à s'intégrer dans le nouveau projet de Xabi Alonso. Le club attend de lui des performances convaincantes pour confirmer sa place dans l'effectif.</p>
             </div>
         </div>
-        <div class="mt-8 md:flex">
-            <img src="img/Endrick.jpeg" alt="Endrick" class="mt-16 mb-4 ml-[15%] h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:order-2 md:rounded-none md:h-[380px] md:w-full md:mr-[10%]"> 
-            <div class="md:mt-8 md:ml-6">
-                <h3 class="mt-8 mb-4 text-[22px] text-[#0a4da2]">Endrick la nouvelle étoile</h3>
+        <div class="md:flex">
+            <img src="img/Endrick.jpeg" alt="Endrick" class="mt-16 mb-4 ml-[15%] md:ml-[5%] h-[320px] w-[260px] shadow-lg shadow-black rounded-lg md:order-2 md:rounded-none md:h-[380px] md:w-full md:mr-[10%]"> 
+            <div class="md:mt-4 md:ml-6">
+                <h3 class="mt-8 mb-4 md:text-[32px] text-[#0a4da2] text-left ml-12">Endrick! Pourquoi pas en prêt?</h3>
                                     
-                            <p class="m-4 mb-2 md:text-[18px]">À seulement 17 ans, Endrick a déjà fait parler de lui avec des performances impressionnantes à lors de sa campagne en coupe du roi. Son transfert au Real Madrid représente une vision à long terme du club, cherchant à construire une équipe compétitive pour les années à venir. Sa vitesse, sa technique et son flair offensif en font un joueur à suivre de près.<br>L'intégration d'Endrick à Madrid sera cruciale pour son développement. Sous l'aile de joueurs expérimentés comme Mbappé ou Vinicius, il aura l'opportunité d'apprendre et de s'épanouir dans un environnement compétitif. Le club a une longue tradition de développement de jeunes talents, et Endrick pourrait devenir la prochaine grande star de ce Réal Madrid. </p> <span class="absolute left-[5%]  text-[12px] mb-6 md:mt-4">© Nyamsi Lévy</span>
+                <p class="m-4 mb-2 md:text-[24px] text-left ml-12">La Juventus serait actuellement très intéressée par le profil d’Endrik, jeune attaquant prometteur du Real Madrid, dans l’optique d’un prêt. Le club madrilène ne serait pas totalement fermé à cette possibilité, voyant dans ce prêt une opportunité pour Endrik de gagner du temps de jeu précieux et de continuer son développement dans un environnement différent du championnat espagnol. Cette expérience en Serie A, réputée pour son intensité tactique et physique, pourrait lui permettre d’affiner ses qualités et de revenir au Real Madrid encore plus complet.</p>
             </div>
             
                   

@@ -8,66 +8,91 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="md:text-[30px]">
-        <h1 class="text-[30px]">Blog Madrid</h1>
-        <nav class="">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Calendrier.html">Calendrier</a></li>
-                <li><a href="Equipe.html">Equipe</a></li>
-            </ul>
+    <header class="p-4 md:text-[30px]">
+        
+        <div class="flex justify-between items-center md:hidden">
+          <h1 class="text-[32px]">Blog Madrid</h1>
+          <button id="burger" class="text-3xl" aria-label="Menu">
+            &#9776;
+          </button>
+        </div>
+      
+        <div class="hidden md:block text-center">
+          <h1 class="text-[54px]">Blog Madrid</h1>
+        </div>
+      
+        <nav id="navMenu" class="hidden flex-col gap-4 mt-4 md:flex md:flex-row md:gap-8 md:justify-center">
+          <ul class="flex flex-col gap-2 md:flex-row">
+            <li><a class="text-[28px]" href="index.html">Accueil</a></li>
+            <li><a class="text-[28px]" href="Actualités.html">Actualités</a></li>
+            <li><a class="text-[28px]" href="Calendrier.html">Calendrier</a></li>
+            <li><a class="text-[28px]" href="Equipe.html">Equipe</a></li>
+          </ul>
         </nav>
+      
+        <!-- Script burger -->
+        <script>
+          const burger = document.getElementById("burger");
+          const navMenu = document.getElementById("navMenu");
+      
+          burger.addEventListener("click", () => {
+            navMenu.classList.toggle("hidden");
+          });
+        </script>
     </header>
     <div class="mt-6 text-center">
         <h2 class="text-[32px] md:text-[38px] text-[#0a4da2]">Dernières actualités</h2>
-        <article class="md:flex">
-           
-                <img class="h-[320px] w-[260px] md:h-[420px] md:w-[360px] shadow-lg shadow-black rounded-lg mt-6 mb-4 ml-[15%] md:ml-[10%] md:rounded-xs"  src="img/Belli.jpg" alt="Bellingham">
+        <article class="mt-6 text-center md:rounded-lg md:shadow-lg md:shadow-black md:ml-[5%] md:mr-[5%] md:p-6">
 
-                <div>
-                    <h3 class="mt-8 text-[22px] md:text-[28px] text-[#0a4da2] ">Bellingham, le futur du Real Madrid : Le milieu le plus complet du monde</h3>
-                    <p class="p-6 pb-2 md:text-[20px] md:ml-4 md:mr-[10%]">Depuis plusieurs mois, une certitude s’installe dans les esprits des supporters madrilènes : Jude Bellingham, surnommé "Belli", n’est pas simplement une recrue brillante, c’est l’architecte du futur du Real Madrid. À seulement 21 ans, l’international anglais s’est imposé comme le milieu de terrain le plus complet du monde, redéfinissant le rôle de "numéro 8" dans le football moderne.<br>
-                        Ce qui distingue Bellingham de ses contemporains, c’est son incroyable polyvalence. Il peut jouer en 6, 8 ou 10 avec la même aisance. Défensivement, il récupère, presse, et oriente. Offensivement, il dicte le tempo, casse les lignes, et surtout, il marque souvent et dans les moments décisifs. Peu de milieux de terrain dans l’histoire récente ont affiché une telle palette à son âge. Son jeu sans ballon, son impact physique et sa maturité tactique rappellent les plus grands, tout en apportant une touche de modernité et de verticalité dont le Real avait besoin.</p>
+            <div class="md:flex">
+                <img class="h-[320px] w-[260px] md:h-[520px] md:w-[490px] shadow-lg shadow-black rounded-lg md:mt-20 mt-6 mb-4 ml-[15%] md:ml-[5%] md:rounded-xs"  src="img/kylianMBAPPÉ.jpg" alt="Bellingham">
+                <div class="ml-[10%] mr-[8%] md:mr-0 md:ml-6 md:mt-8">
+                    <h3 class=" mt-8 md:mt-4 text-[22px] md:text-[45px] text-[#0a4da2] ">Kylian soulier d'or!</h3>
+                    <p class="md:p-6 md:pb-2 md:text-[20px] text-left">Kylian Mbappé a remporté le Soulier d'Or 2024-2025, devenant le meilleur buteur européen avec 31 buts en Liga, malgré des débuts difficiles et une saison collectivement mitigée pour le Real Madrid. Arrivé au Real Madrid à l'été 2024, Mbappé a connu des débuts compliqués, peinant à s'intégrer dans le système de jeu et à trouver une entente avec ses coéquipiers, notamment Vinícius Jr. <br>Malgré ces difficultés initiales, Mbappé a progressivement trouvé ses marques, enchaînant les performances de haut niveau. Il a terminé la saison avec 43 buts toutes compétitions confondues, devenant le meilleur buteur de la Liga et remportant le trophée Pichichi.</p>
+                    <h5 class="mt-1 text-[22px] md:text-[28px] text-[#0a4da2] text-left md:ml-4">Une saison contrastée pour le Real Madrid</h5>
+                    <p class="md:text-[20px] md:ml-4 md:mr-[10%] text-left">Si Kylian Mbappé a éclaboussé la saison de son talent sur le plan individuel, le Real Madrid, lui, a traversé une campagne 2024-2025 en demi-teinte sur le plan collectif. L'équipe merengue, habituée à se battre pour tous les trophées, termine la saison sans le moindre titre majeur, une anomalie pour un club de cette envergure. En Liga, les hommes de Carlo Ancelotti ont manqué de constance, lâchant des points précieux face à des adversaires abordables. Le collectif a souvent semblé déséquilibré, avec une dépendance offensive trop marquée sur les exploits de Mbappé et Vinícius, et une défense parfois friable dans les moments décisifs.</p>
                 </div>
+                
+            </div>
+           
+            <div class="ml-[10%] mr-[8%] md:mr-0 md:ml-2 md:mt-8">
+                    
+                <h5 class="mt-1 text-[22px] md:text-[28px] text-[#0a4da2] text-left md:ml-[5%]">Une reconnaissance méritée</h5>
+                <p class="md:text-[20px] md:ml-[5%] md:mr-[10%] text-left">Malgré les performances collectives en demi-teinte, Mbappé a été élu meilleur joueur de la saison par les supporters du Real Madrid, témoignant de son impact et de son importance au sein de l'équipe. Ce Soulier d'Or vient récompenser la persévérance et le talent de Mbappé, qui a su surmonter les obstacles pour s'imposer comme l'un des meilleurs attaquants du monde.</p>
+            </div>
                 
             
         </article>
         <articles class="naufrage md:flex">
-            <img class= "h-[320px] w-[260px] shadow-lg shadow-black rounded-lg mt-6 mb-4 ml-[15%] md:h-[550px] md:order-2 md:ml-[4%] md:mr-[10%] md:w-[320px]" src="img/Pinterest.jpeg" alt="Madrid">
+            <img class= "shadow-lg h-[350px] shadow-black rounded-lg mt-6 mb-4 ml-[12%] md:order-2 md:ml-[4%] md:mr-[10%] md:h-[500px]" src="img/IMG_5986.jpg" alt="Madrid">
 
             <div class="md:ml-[10%] md:mt-16">
                 <div>
-                    <h3 class="text-[22px] md:text-[28px] " style="color: #0a4da2;">Une performance en demi-teinte</h3>
-                    <p class="p-6 pb-3 md:text-[20px]" style="color: #555;">Dès les premières minutes, on a senti un Real Madrid timide, en manque de rythme. Les absences notables, les jambes peut-être lourdes après une série de matchs intenses, ou simplement une mauvaise lecture de la rencontre ? Quelle qu’en soit la raison, le Real n’a jamais vraiment imposé sa loi. Malgré une possession de balle maîtrisée par moments, les Merengue ont peiné à déséquilibrer un bloc adverse parfaitement en place.
-
-                    Les individualités habituellement décisives Brahim, Vinícius, ou même Rodrigo n'ont pas su hausser leur niveau. Et dans les moments clés, le réalisme, cette marque de fabrique madrilène, a cruellement manqué.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-[20px] md:text-[26px]" style="color: #0a4da2;">Une défense en difficulté & un milieu étouffé</h4>
-                    <p class="p-6 pb-2 p-6 pb-3 md:text-[20px]" style="color: #555;">Défensivement, le Real a été pris à revers sur des phases rapides. L’absence d’agressivité dans les duels et un manque de coordination sur certaines transitions ont laissé des espaces fatals. Les but encaissé symptomatique d’un relâchement collectif a mis en lumière une fragilité de plus en plus récurentes cette saison chez les Blancos.
-
-                    Au milieu, l’intensité a fait défaut. Face à une équipe qui jouait chaque ballon comme une finale de sa vie, le Real a semblé parfois jouer avec le frein à main.</p>
+                    <h3 class="text-[22px] md:text-[45px] " style="color: #0a4da2;">Alexander-Arnold rejoint Madrid</h3>
+                    <p class="p-6 pb-2 md:text-[20px] text-left" style="color: #555;">Le Real Madrid a officialisé l'arrivée de Trent Alexander-Arnold en provenance de Liverpool. Le défenseur anglais, âgé de 26 ans, s'est engagé pour six saisons, jusqu'en 2031. Cette signature intervient un mois avant la fin de son contrat avec les Reds, grâce à un accord spécial entre les deux clubs. Pour permettre à Alexander-Arnold de rejoindre Madrid dès le 1er juin, le club espagnol a versé 10 millions d'euros à Liverpool. Cette somme inclut une compensation pour le salaire du joueur et une indemnité de transfert. Cette décision stratégique vise à renforcer l'effectif madrilène avant le début du Mondial des clubs, prévu à partir du 14 juin aux États-Unis</p>
+                    
+                    <h5 class="text-[22px] md:text-[32px] " style="color: #0a4da2;">Un renfort offensif pour la défense</h5>
+                    <p class="p-6 pt-3 pb-3 md:text-[20px] text-left" style="color: #555;">Recruté pour son apport offensif, Alexander-Arnold a disputé 354 matchs avec Liverpool, inscrivant 23 buts et délivrant 92 passes décisives. Sa capacité à participer activement au jeu offensif, notamment grâce à ses passes longues et ses coups de pied arrêtés, fait de lui un atout précieux pour le Real Madrid. Sous la houlette de Xabi Alonso, il devrait évoluer dans un système de jeu qui valorise les latéraux offensifs.</p>
                 </div>
             </div>
  
                 
         </articles>
-        <article  style="margin-top: 30px;" class=" md:pl-[10%] md:pr-[10%] md:flex md:mt-6 md:flex-wrap">
-            <img class="w-full md:h-[380px] md:w-[320px]" src="img/Xabi-Alonso-annonce-au-Real-Madrid.jpg" alt="Madrid">
+        <article  style="margin-top: 30px;" class="mt-6 text-center md:rounded-lg md:shadow-lg md:shadow-black md:ml-[5%] md:mr-[5%] md:p-6">
 
-            <div>
-                <h3 class="text-[22px] md:text-[28px]" style="color: #0a4da2; margin-top:15px;">Xabi Alonso, le successeur naturel : pour reconstruire l’identité de jeu du Real Madrid</h3>
-                <p class="p-2 md:text-[20px]" >Alors que Carlo Ancelotti semble approcher de la fin de son deuxième mandat sur le banc du Real Madrid, une question majeure anime les coulisses de la Casa Blanca : qui sera capable d’incarner l’héritage tout en insufflant une nouvelle ère ? Un nom s’impose de plus en plus comme une évidence, celui de Xabi Alonso. Ancien joueur emblématique du club, entraîneur en pleine ascension, et figure respectée dans toute l’Europe, il apparaît aujourd’hui comme le candidat parfait pour reconstruire l’identité de jeu du Real Madrid.</p>
+            <div class="md:flex">
+                <img class="md:ml-[2%] md:h-[420px] md:w-[380px]" src="img/Xabi-Alonso-annonce-au-Real-Madrid.jpg" alt="Madrid">
                 <div>
-                    <h4 class="text-[22px] md:text-[24px]" style="margin-top: 10px; color: #0a4da2;">Un ADN madrilène dans le sang</h4>
-                    <p class="p-2 md:text-[20px]" style="color: #555;">Formé à la Real Sociedad, épanoui à Liverpool, Xabi Alonso a laissé une empreinte indélébile au Real Madrid entre 2009 et 2014. Stratège du milieu de terrain sous Mourinho puis Ancelotti, il a incarné l’élégance et l’intelligence de jeu à la madrilène : sobriété, rigueur, précision, et un sens aigu de la lecture du jeu. Son passage au club a non seulement marqué une époque, mais l’a également imprégné d’une culture de l’excellence que peu de techniciens peuvent revendiquer. Il connaît la maison. Il sait ce qu’elle exige.</p>
+                    <h3 class="text-[22px] md:text-[45px]" style="color: #0a4da2; margin-top:15px;">Xabi Alonso de retour à la maison</h3>
+                    <p class="p-6 pb-1 md:text-[20px] text-left md:ml-[2%] md:mr-[2%]" >Xabi Alonso a officiellement pris les rênes du Real Madrid le 26 mai 2025, succédant à Carlo Ancelotti. Ancien joueur emblématique du club, Alonso revient avec l'ambition de redéfinir l'identité tactique de l'équipe tout en s'appuyant sur l'héritage de son prédécesseur. Fort de son expérience réussie à la tête du Bayer Leverkusen, où il a mené l'équipe à un titre de Bundesliga invaincue et une victoire en Coupe d'Allemagne, Alonso apporte une approche tactique innovante au Real Madrid. Il envisage une équipe proactive et équilibrée, mettant l'accent sur le dynamisme, l'énergie et l'ambition collective. Son objectif est de permettre aux talents individuels, tels que Jude Bellingham, Kylian Mbappé, Vinícius Júnior ou encore Rodrygo, de s'épanouir pleinement dans un système structuré. <br>Alonso a exprimé son intention de suivre les traces d'Ancelotti, tout en insufflant sa propre philosophie de jeu. Il prévoit d'implémenter un style de jeu adaptable et émotionnellement engageant, axé sur la maximisation des performances des joueurs clés. Cette approche vise à maintenir la compétitivité de l'équipe tout en introduisant de nouvelles dynamiques tactiques.</p>
                 </div>
-                <div>
-                    <h4 class="text-[22px] md:text-[28px]" style="margin-top: 10px; color: #0a4da2;">Un style clair, une philosophie affirmée</h4>
-                    <p class="p-2 md:text-[20px]" style="color: #555;">Ce qui impressionne dans le travail de Xabi Alonso avec le Bayer Leverkusen, c’est la clarté et la cohérence de son projet de jeu. En l’espace de deux saisons, il a transformé une équipe moyenne de Bundesliga en machine collective, structurée, moderne et redoutablement efficace. Pressing intelligent, transitions rapides, construction posée : tout y est. Son approche mêle discipline tactique, jeu de position, et verticalité maîtrisée, exactement ce dont le Real a besoin pour retrouver une identité forte après des années de pragmatisme.</p>
-                </div>
+                
+            </div>
+            
+
+            <div class="ml-[5%] mr-[5%] md:ml-0 md:mr-0">
+               <h5 class="md:ml-[2%] text-[22px] md:text-[28px] text-center md:text-left" style="color: #0a4da2; margin-top:15px;">Défis et perspectives</h5>
+               <p class="p-2 md:text-[20px] text-left md:ml-[2%] md:mr-[2%]">Le principal défi d'Alonso sera de tirer le meilleur parti d'un effectif riche en individualités, en imposant de l'ordre sans autoritarisme. Il devra également s'adapter à un environnement où la pression médiatique et les attentes des supporters sont élevées, avec peu de marge pour l'erreur. Son premier grand test sera le Mondial des clubs, une opportunité de mettre en pratique ses idées tactiques et de commencer à façonner son Real Madrid. Avec intelligence, ambition et sérénité, Alonso semble prêt à relever les défis inhérents au banc madrilène.</p>
             </div>
 
         </article>
